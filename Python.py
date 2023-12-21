@@ -4,7 +4,7 @@ import mediapipe as mp
 
 
 cap = cv2.VideoCapture(0)
-myname = "Flook"  
+myname = "660610824-tanaphom"  
 #Call hand pipe line module
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
@@ -71,8 +71,8 @@ while True:
                 (135, 160, 250), 3)
               
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)        
-    cv2.putText(img, str(str(myname)), (450, 430), cv2.FONT_HERSHEY_PLAIN, 3,
-                (100, 5, 0), 3)
+    cv2.putText(img, str(str(myname)), (275, 450), cv2.FONT_HERSHEY_PLAIN, 1.8,
+                (20, 5, 200), 3)
     cv2.imshow("Image", img)
     cv2.waitKey(1)
 #Closeing all open windows
