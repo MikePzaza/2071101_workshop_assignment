@@ -51,27 +51,27 @@ while True:
                     cx3 = cx
             finger = ["THUMB", "Index finger","Middle finger","Ring finger","Pinky Finger"]   
             if cx20 < cx18 :
-                cv2.putText(img, str(finger[4]),(80, 250), cv2.FONT_HERSHEY_PLAIN, 2,
-                (135, 160, 250), 3)
+                cv2.putText(img, str(finger[4]),(250, 250), cv2.FONT_HERSHEY_PLAIN, 2,
+                (135, 160, 290), 3)
                
             if cx16 < cx14:
-                cv2.putText(img, str(finger[3]),(80, 300 ), cv2.FONT_HERSHEY_PLAIN,2,
-                (135, 160, 250), 3)
+                cv2.putText(img, str(finger[3]),(250, 300 ), cv2.FONT_HERSHEY_PLAIN,2,
+                (135, 160, 290), 3)
                
             if cx12 < cx10 :
-                cv2.putText(img, str(finger[2]),(80, 350), cv2.FONT_HERSHEY_PLAIN, 2,
-                (135, 160, 250), 3)
+                cv2.putText(img, str(finger[2]),(250, 350), cv2.FONT_HERSHEY_PLAIN, 2,
+                (135, 160, 290), 3)
                
             if cx8 < cx6 :
-                cv2.putText(img, str(finger[1]),(80, 400), cv2.FONT_HERSHEY_PLAIN, 2,
-                (135, 160, 250), 3)
+                cv2.putText(img, str(finger[1]),(250, 400), cv2.FONT_HERSHEY_PLAIN, 2,
+                (135, 160, 290), 3)
                 
             if cx4 > cx3:
-                cv2.putText(img, str(finger[0]),(80, 450), cv2.FONT_HERSHEY_PLAIN, 2,
-                (135, 160, 250), 3)
+                cv2.putText(img, str(finger[0]),(250, 450), cv2.FONT_HERSHEY_PLAIN, 2,
+                (135, 160, 290), 3)
               
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)        
-    cv2.putText(img, str(str(myname)), (275, 450), cv2.FONT_HERSHEY_PLAIN, 1.8,
+    cv2.putText(img, str(str(myname)), (10, 70), cv2.FONT_HERSHEY_PLAIN, 1.8,
                 (20, 5, 200), 3)
     cv2.imshow("Image", img)
     cv2.waitKey(1)
